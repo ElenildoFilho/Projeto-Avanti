@@ -1,0 +1,211 @@
+/* Configurações gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #474747;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  header p {
+    margin: 10px 0;
+  }
+  
+  /* Estilos das seções */
+  .platform-section {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: stretch; 
+    min-height: 20vh; 
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  /* PS4 */
+  .ps4 {
+    background-color: #003087;
+    color: white;
+  }
+  
+  /* Xbox */
+  .xbox {
+    background-color: #107C10;
+    color: white;
+  }
+  
+  /* Nintendo Switch */
+  .switch {
+    background-color: #E60012;
+    color: white;
+  }
+  
+  /* game-grid */
+  .game-grid {
+    flex: 1; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  @keyframes fadeInSlide {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .game-grid .game-card {
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeInSlide 0.5s ease forwards; 
+  }
+  
+  .game-grid .game-card:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .game-grid .game-card:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .game-grid .game-card:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .game-grid .game-card:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+  .game-grid .game-card:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+
+  /* game-grid */
+  
+
+
+  /* game-card */
+  .game-card {
+    background-color: rgba(253, 0, 0, 0); 
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .game-card:hover {
+    transform: scale(1.10);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .game-card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .game-card h3 {
+    margin: 10px 0;
+  }
+  
+  .game-card p {
+    font-size: 0.9em;
+    color: #d6d6d6;
+  }
+  
+  .game-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: underline;
+  }
+  
+  .game-card a:hover {
+    text-decoration: underline;
+  }
+
+  /* game-card */
+  
+  /* Footer */
+  .site-footer {
+    background-color: rgb(33, 33, 33);
+    color: #ecf0f1;
+    padding: 20px 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1 1 calc(33.333% - 20px); /* Flexível com largura mínima */
+    min-width: 200px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #f39c12;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    border-top: 1px solid #7f8c8d;
+    padding-top: 10
+  }
+
+  .footer-section a {
+    color: #ecf0f1;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    color: #f39c12;
+  }
+  
+  
