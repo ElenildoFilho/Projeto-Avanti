@@ -50,6 +50,7 @@ header p {
 
 .main-nav a:hover {
   color: rgb(0, 188, 212);
+  text-decoration: underline;
 }
 
 /* Estilos das seções */
