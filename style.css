@@ -89,10 +89,14 @@ header p {
   gap: 20px;
 }
 .veja-mais-link {
-  color: black;
+  color: white;
   text-decoration: none;
   padding-top: 10px;
   align-self: flex-end;
+}
+.veja-mais-link:hover {
+  text-decoration: underline;
+  color: black;
 }
 
 @keyframes fadeInSlide {
