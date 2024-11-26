@@ -27,32 +27,55 @@ header p {
   margin: 10px 0;
 }
 
-/*Estilização do menu*/
+/* Estilo do Header */
+.header {
+  text-align: center; 
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Estilo do menu de navegação */
 .main-nav {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
   background-color: rgb(33, 33, 33);
   padding: 10px;
 }
 
 .main-nav ul {
   list-style: none;
-  display: flex;
-  margin: 0;
   padding: 0;
-  flex-wrap: wrap;
-  gap: 30px;
+  margin: 0;
+  display: flex;
+}
+
+.main-nav li {
+  margin: 0 15px;
 }
 
 .main-nav a {
-  color: rgb(200, 200, 200);
   text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .main-nav a:hover {
-  color: rgb(0, 188, 212);
-  text-decoration: underline;
+  color: #007bff;
 }
+
 
 /* Estilos das seções */
 .platform-section {
@@ -63,6 +86,14 @@ header p {
   min-height: 20vh;
   padding: 30px;
   box-sizing: border-box;
+  padding: 20px; 
+  border-radius: 8px; ;
+}
+
+.gap {
+  padding: 20px;
+  background-color: rgb(33, 33, 33);
+
 }
 
 /* PS4 */
@@ -138,8 +169,6 @@ header p {
   animation-delay: 0.5s;
 }
 
-/* game-grid */
-
 /* game-card */
 .game-card {
   background-color: rgba(253, 0, 0, 0);
@@ -180,8 +209,6 @@ header p {
   text-decoration: underline;
 }
 
-/* game-card */
-
 /* Footer */
 .site-footer {
   background-color: rgb(33, 33, 33);
@@ -201,7 +228,7 @@ header p {
 }
 
 .footer-section {
-  flex: 1 1 calc(33.333% - 20px); /* Flexível com largura mínima */
+  flex: 1 1 calc(33.333% - 20px);
   min-width: 200px;
 }
 
