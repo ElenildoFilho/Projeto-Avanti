@@ -7,7 +7,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #474747;
     color: #333;
 }
   
@@ -27,31 +27,53 @@ header p {
     margin: 10px 0;
 }
   
-/*Estilização do menu*/
+/* Estilo do Header */
+.header {
+    text-align: center; 
+    padding: 20px;
+}
+  
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+  
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+  
+/* Estilo do menu de navegação */
 .main-nav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
     background-color: rgb(33, 33, 33);
     padding: 10px;
 }
   
 .main-nav ul {
     list-style: none;
-    display: flex;
-    margin: 0;
     padding: 0;
-    flex-wrap: wrap;
-    gap: 30px;
+    margin: 0;
+    display: flex;
+}
+  
+.main-nav li {
+    margin: 0 15px;
 }
   
 .main-nav a {
-    color: rgb(200, 200, 200);
     text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
     font-weight: bold;
     transition: color 0.3s ease;
 }
   
 .main-nav a:hover {
-    color: rgb(0, 188, 212);
-    text-decoration: underline;
+    color: #007bff;
 }
 
 /* Seção das Notícias */
@@ -61,8 +83,9 @@ header p {
 }
 
 .noticias h2 {
-    color: #333333;
-    font-size: 2.5em;
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 700;
 }
 
 .grid-destaque {
@@ -80,15 +103,16 @@ header p {
 
     & h3 { 
         color: #ecf0f1;
-        font-size: 1.5fr;
+        font-size: 20px;
         margin-top: 20px;
+        margin-bottom: 10px;
         margin-inline: 20px;
         text-align: justify;
     }
 
     & p {
         color: #ecf0f1;
-        font-size: 0.8fr;
+        font-size: 15px;
         margin-top: 8px;
         margin-inline: 20px;
         text-align: left;
@@ -110,7 +134,7 @@ header p {
         background-color: #f39c12;
         padding-block: 4px;
         padding-inline: 14px;
-        font-size: 0.8fr;
+        font-size: 18px;
         margin-top: 8px;
         margin-inline: 20px;
         text-align: left;
@@ -143,16 +167,17 @@ header p {
 
     & h3 { 
         color: #ecf0f1;
-        font-size: 1fr;
-        margin-top: 20px;
+        font-size: 18px;
+        margin-top: 10px;
         margin-inline: 20px;
+        margin-bottom: 10px;
         text-align: justify;
     }
 
     & p {
         color: #ecf0f1;
-        font-size: 0.5fr;
-        margin-top: 8px;
+        font-size: 14px;
+        margin-top: 5px;
         margin-inline: 20px;
         text-align: left;
     }
@@ -161,7 +186,7 @@ header p {
         margin-left: 10px;
         margin-top: 10px;
         width: 320px;
-        height: 120px;
+        height: 170px;
     }
 
     & a {
@@ -173,7 +198,7 @@ header p {
         background-color: #f39c12;
         padding-block: 4px;
         padding-inline: 8px;
-        font-size: 0.5fr;
+        font-size: 15px;
         margin-top: 8px;
         margin-inline: 20px;
         text-align: left;
@@ -186,12 +211,36 @@ header p {
     }
 }
 
-
 .card-noticia:hover {
+    color: #333333;
     outline: solid 2px #a0a0a0;
     border-radius: .5rem;
 }
 
+.btn-mais {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-mais a {
+    color: #333333;
+    font-weight: 600;
+    text-decoration: none;
+    border: solid 1.5px #333333;
+    border-radius: .5rem;
+    background-color: #f39c12;
+    padding-block: 12px;
+    padding-inline: 32px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn-mais a:hover{
+    color: #ffffff;
+    transition: color 1s ease;
+}
 
 /* Footer */
 .site-footer {
@@ -212,7 +261,7 @@ header p {
 }
   
 .footer-section {
-    flex: 1 1 calc(33.333% - 20px); /* Flexível com largura mínima */
+    flex: 1 1 calc(33.333% - 20px);
     min-width: 200px;
 }
   
